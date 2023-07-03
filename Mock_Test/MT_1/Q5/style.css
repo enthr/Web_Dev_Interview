@@ -1,0 +1,41 @@
+.container {
+    width: 99vw;
+    height: 99vh;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.container > div {
+    width: 100%;
+    height: 100%;
+}
+
+.container > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.child_1, .child_2, .child_3 {
+    grid-column: span 2;
+}
+
+.child_1, .child_2 {
+    grid-row: span 3;
+}
+
+.child_3 {
+    grid-row: span 2;
+}
+
+.child_4, .child_6 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.child_5 {
+    grid-column: span 4;
+    grid-row: span 3;
+}
